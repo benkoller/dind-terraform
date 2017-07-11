@@ -11,6 +11,7 @@ RUN apk add --update \
     bash \
     vim \
     jq \
+    git \
   && pip install virtualenv \
   && rm -rf /var/cache/apk/*
 
