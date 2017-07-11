@@ -10,6 +10,7 @@ RUN apk add --update \
     curl \
     bash \
     vim \
+    jq \
   && pip install virtualenv \
   && rm -rf /var/cache/apk/*
 
