@@ -1,4 +1,4 @@
-FROM alpine
+FROM docker:17.06.0-ce
 
 ENV TERRAFORM_VERSION 0.9.11
 
