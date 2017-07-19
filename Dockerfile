@@ -12,6 +12,8 @@ RUN apk add --update \
     vim \
     jq \
     git \
+    openssl-dev \
+    libffi-dev \
   && pip install virtualenv \
   && rm -rf /var/cache/apk/*
 
