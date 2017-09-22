@@ -1,6 +1,6 @@
 FROM docker:17.06.2-ce
 
-ENV TERRAFORM_VERSION 0.10.06
+ENV TERRAFORM_VERSION 0.10.6
 
 RUN apk add --update \
     python \
