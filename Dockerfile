@@ -1,6 +1,7 @@
 FROM docker:17.06.2-ce
 
 ENV TERRAFORM_VERSION 0.10.6
+ENV DOCKER_COMPOSE_VERSION 1.8.0
 
 RUN apk add --update \
     python \
@@ -21,5 +22,7 @@ RUN curl -o /tmp/terraform.zip "https://releases.hashicorp.com/terraform/"$TERRA
     unzip /tmp/terraform.zip && \
     chmod +x terraform && \
     mv terraform /usr/local/bin
+
+RUN pip install "docker-compose==$DOCKER_COMPOSE_VERSION"
 
 ENTRYPOINT /bin/bash
